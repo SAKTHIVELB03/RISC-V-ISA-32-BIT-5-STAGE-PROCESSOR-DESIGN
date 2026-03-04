@@ -1,7 +1,6 @@
 # RISC-V-ISA-32-BIT-5-STAGE-PROCESSOR-DESIGN
 
 # RISC V Architecture
-<img width="1046" height="664" alt="image" src="https://github.com/user-attachments/assets/861db3e7-6f52-4bcb-b340-3d3fd3bf4bb9" />
 <img width="2237" height="1437" alt="riscv_architecture_enhanced" src="https://github.com/user-attachments/assets/1d9b9777-98e8-42d3-a55b-be44d55bb18c" />
 
 
