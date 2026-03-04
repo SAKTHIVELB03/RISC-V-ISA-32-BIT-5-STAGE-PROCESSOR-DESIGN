@@ -24,28 +24,44 @@ I-type instructions perform operations that involve an immediate value. Instead 
 S-type instructions are used for store operations where data from a register is written to memory. J-type instructions are used for jump operations that modify the program counter to transfer control to another instruction address. L-type instructions are used for load operations where data is read from memory and stored in a register.
 
 # Pipeline Stage 1 – Instruction Fetch
+<img width="660" height="463" alt="image" src="https://github.com/user-attachments/assets/4078fec0-2e0d-43dc-b4fc-37184eb79972" />
+
 In the Instruction Fetch stage, the processor retrieves the instruction from the instruction memory using the Program Counter (PC). After fetching the instruction, the PC is incremented by 4 to point to the next instruction. This stage ensures that the correct instruction enters the pipeline for further processing.
 
 
 # Pipeline Stage 2 – Instruction Decode
+<img width="656" height="460" alt="image" src="https://github.com/user-attachments/assets/2d0668d2-7a88-4ec5-914b-f6c6f3efcb49" />
+
 During the Instruction Decode stage, the fetched instruction is interpreted to determine the operation type and operand locations. The register file is accessed to read the required source registers. The control unit generates control signals required for subsequent stages.
 
 # Pipeline Stage 3 – Execution (ALU)
+<img width="654" height="449" alt="image" src="https://github.com/user-attachments/assets/3c22f123-561e-4e66-9e8e-400537dd9149" />
+
 In the Execution stage, the Arithmetic Logic Unit (ALU) performs the required arithmetic or logical operation specified by the instruction. Operations such as addition, subtraction, logical operations, shifts, and comparisons are carried out in this stage.
 
 # Pipeline Stage 4 – Memory
+<img width="671" height="455" alt="image" src="https://github.com/user-attachments/assets/c197ec05-8538-4cd4-88cb-d4bf252b0159" />
+
 The Memory Access stage is used for load and store instructions. If the instruction requires memory access, the processor either reads data from the data memory (load) or writes data to the memory (store). Instructions that do not involve memory operations skip this stage.
 
 # Pipeline Stage 5 – Write Back
+<img width="662" height="462" alt="image" src="https://github.com/user-attachments/assets/2e67c776-0f1d-4633-bb30-2104964a491d" />
+
 In the Write Back stage, the result produced by the ALU or the data retrieved from memory is written back into the destination register of the register file. This completes the execution of the instruction.
 
 # Data Hazard in Pipeline
+<img width="667" height="453" alt="image" src="https://github.com/user-attachments/assets/d3dfbd0a-a645-447c-915f-e06bb77a0709" />
+
 A data hazard occurs when an instruction depends on the result of a previous instruction that has not yet completed execution. Techniques such as forwarding and pipeline stalling are used to resolve these hazards and maintain correct program execution.
 
 # Load Word Hazard Handling
+<img width="669" height="457" alt="image" src="https://github.com/user-attachments/assets/b3c95554-04e9-4921-9083-e70ae36cc263" />
+
 Load word hazards occur when an instruction immediately following a load instruction requires the loaded data. Since the data becomes available only after the memory access stage, the pipeline is stalled for one cycle to ensure correct data availability.
 
 # Control Hazard
+<img width="666" height="463" alt="image" src="https://github.com/user-attachments/assets/9d4adfdf-c40e-4f60-b421-204827781a83" />
+
 Control hazards occur due to branch or jump instructions that change the flow of execution. To handle this, instructions that have already entered the pipeline after the branch may be flushed if the branch condition is satisfied.
 
 # Schematic Diagram
