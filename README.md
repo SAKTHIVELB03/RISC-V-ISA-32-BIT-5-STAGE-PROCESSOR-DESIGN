@@ -2,6 +2,8 @@
 
 # RISC V Architecture
 <img width="1046" height="664" alt="image" src="https://github.com/user-attachments/assets/861db3e7-6f52-4bcb-b340-3d3fd3bf4bb9" />
+<img width="2237" height="1437" alt="riscv_architecture_enhanced" src="https://github.com/user-attachments/assets/1d9b9777-98e8-42d3-a55b-be44d55bb18c" />
+
 
 This diagram shows the architecture of a 32-bit RV32I RISC-V processor implemented using a five-stage pipeline. The major components include the Program Counter (PC), Instruction Memory, Register File, ALU, Data Memory, and Control Unit. Instructions are fetched from instruction memory, decoded in the register file stage, executed in the ALU, optionally access data memory, and finally write results back to registers. A hazard unit is used to detect and handle data hazards in the pipeline.
 
