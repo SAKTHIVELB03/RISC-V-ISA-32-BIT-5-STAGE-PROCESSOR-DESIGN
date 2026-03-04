@@ -1,21 +1,16 @@
 # RISC-V-ISA-32-BIT-5-STAGE-PROCESSOR-DESIGN
 
-<img width="722" height="503" alt="image" src="https://github.com/user-attachments/assets/046bc77e-a915-4d74-8f26-71f83088718d" />
+#RISC V Architecture
+<img width="2481" height="1754" alt="rv32_architecture" src="https://github.com/user-attachments/assets/eef47d7a-4b63-4f69-b69c-68a00dcd785e" />
 
-<img width="758" height="469" alt="image" src="https://github.com/user-attachments/assets/97918723-d6f6-47c4-8870-05847d9882d9" />
+This diagram shows the architecture of a 32-bit RV32I RISC-V processor implemented using a five-stage pipeline. The major components include the Program Counter (PC), Instruction Memory, Register File, ALU, Data Memory, and Control Unit. Instructions are fetched from instruction memory, decoded in the register file stage, executed in the ALU, optionally access data memory, and finally write results back to registers. A hazard unit is used to detect and handle data hazards in the pipeline.
 
-<img width="788" height="732" alt="image" src="https://github.com/user-attachments/assets/0acbb492-cf67-43e1-9b74-c75d9ec072a5" />
+#Instruction Set Architecture Format
+<img width="2481" height="1755" alt="isa_format_table" src="https://github.com/user-attachments/assets/33d8c831-a41a-413b-a52f-a1e987486bce" />
 
-<img width="741" height="253" alt="image" src="https://github.com/user-attachments/assets/02ca8467-b2c0-4292-8370-9d78a6bb8086" />
+The RISC-V instruction format defines how instructions are structured in a 32-bit word. Each instruction consists of fields such as opcode, destination register (rd), source registers (rs1 and rs2), function codes (funct3 and funct7), and immediate values. These fields determine the type of operation to be performed by the processor. Different instruction formats such as R-type, I-type, S-type, B-type, U-type, and J-type are used depending on the operation.
 
-
-<img width="680" height="563" alt="image" src="https://github.com/user-attachments/assets/055e24c4-d91a-43f9-a515-1c49b61e0618" />
-
-<img width="761" height="515" alt="image" src="https://github.com/user-attachments/assets/495e85f6-56bb-4e4e-9ada-71010bb98d55" />
-
-<img width="540" height="709" alt="image" src="https://github.com/user-attachments/assets/f04c6241-452a-40ba-8a8b-715ba6b8c1a2" />
-
-
+# Schematic Diagram
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5a1ac52e-bbdd-4af3-a664-35c81284af1c" />
 
 
