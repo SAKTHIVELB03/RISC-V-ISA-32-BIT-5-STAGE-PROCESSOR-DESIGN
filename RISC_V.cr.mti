@@ -1,0 +1,113 @@
+E:/FPGA/risc__v/ImmGen.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/ImmGen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ImmGen
+
+Top level modules:
+	ImmGen
+
+} {} {}} E:/FPGA/risc__v/RISC_V.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/RISC_V.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RISC_V
+
+Top level modules:
+	RISC_V
+
+} {} {}} E:/FPGA/risc__v/Staller.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/Staller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Staller
+
+Top level modules:
+	Staller
+
+} {} {}} E:/FPGA/risc__v/InstrMem.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/InstrMem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstrMem
+
+Top level modules:
+	InstrMem
+
+} {} {}} E:/FPGA/risc__v/Control_Unit.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/Control_Unit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} E:/FPGA/risc__v/DataMem.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/DataMem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMem
+
+Top level modules:
+	DataMem
+
+} {} {}} E:/FPGA/risc__v/ID_EX.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/ID_EX.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} E:/FPGA/risc__v/Forwarding_Unit.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/Forwarding_Unit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Forwarding_Unit
+
+Top level modules:
+	Forwarding_Unit
+
+} {} {}} E:/FPGA/risc__v/ALU.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} E:/FPGA/risc__v/IF_ID.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/IF_ID.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} E:/FPGA/risc__v/RegFile.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/RegFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} E:/FPGA/risc__v/MEM_WB.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/MEM_WB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MEM_WB
+
+Top level modules:
+	MEM_WB
+
+} {} {}} E:/FPGA/risc__v/ALU_Control.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/ALU_Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU_Control
+
+Top level modules:
+	ALU_Control
+
+} {} {}} E:/FPGA/risc__v/Mult_Div_Unit.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/Mult_Div_Unit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mult_Div_Unit
+
+Top level modules:
+	Mult_Div_Unit
+
+} {} {}} E:/FPGA/risc__v/PC.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/PC.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} E:/FPGA/risc__v/EX_MEM.v {1 {vlog -work work -stats=none E:/FPGA/risc__v/EX_MEM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module EX_MEM
+
+Top level modules:
+	EX_MEM
+
+} {} {}}
