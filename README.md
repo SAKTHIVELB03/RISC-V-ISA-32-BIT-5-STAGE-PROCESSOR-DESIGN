@@ -6,22 +6,36 @@
 This diagram shows the architecture of a 32-bit RV32I RISC-V processor implemented using a five-stage pipeline. The major components include the Program Counter (PC), Instruction Memory, Register File, ALU, Data Memory, and Control Unit. Instructions are fetched from instruction memory, decoded in the register file stage, executed in the ALU, optionally access data memory, and finally write results back to registers. A hazard unit is used to detect and handle data hazards in the pipeline.
 
 # Instruction Set Architecture Format
-<img width="1017" height="668" alt="image" src="https://github.com/user-attachments/assets/4565ab49-96a1-406d-8361-4c444abc0334" />
+<img width="1288" height="384" alt="3d402802-7eb9-4762-b3d7-3b545e66b0b1_enhanced" src="https://github.com/user-attachments/assets/0e65e6a2-b2e7-46db-98c8-fa80d30da603" />
+<img width="1290" height="330" alt="6cd09863-baa6-49be-b418-6de4fe8c51b1_enhanced" src="https://github.com/user-attachments/assets/357661fa-6b9c-46f4-9baf-346fe6e71a7d" />
+
 
 
 The RISC-V instruction format defines how instructions are structured in a 32-bit word. Each instruction consists of fields such as opcode, destination register (rd), source registers (rs1 and rs2), function codes (funct3 and funct7), and immediate values. These fields determine the type of operation to be performed by the processor. Different instruction formats such as R-type, I-type, S-type, B-type, U-type, and J-type are used depending on the operation.
 
 
 # R Type Instructions
-<img width="897" height="443" alt="image" src="https://github.com/user-attachments/assets/68eb8c4c-afe9-4c53-89f8-c96a8eae359d" />
+<img width="1280" height="548" alt="2529341c-ef6f-47d7-8106-5a1a344a70b8_enhanced" src="https://github.com/user-attachments/assets/921c4bc8-fddd-4083-9b22-6a94d768e38c" />
+
 
 R-type instructions perform register-to-register operations. These instructions use two source registers and one destination register. The ALU performs arithmetic or logical operations such as ADD, SUB, AND, OR, XOR, and shift operations. The result of the computation is written back to the destination register.
 
 # I Type Instructions
+<img width="1750" height="756" alt="fdad9554-3158-401e-b15f-810ab0b1649c_enhanced" src="https://github.com/user-attachments/assets/24338818-0a11-416c-a3c4-e08b4be3a20c" />
+
 I-type instructions perform operations that involve an immediate value. Instead of using two source registers, one operand is taken from a register and the other from a constant immediate value encoded in the instruction. Examples include ADDI, ANDI, ORI, and shift operations like SLLI and SRLI.
 
 # S,J and L Type Instructions
+<img width="1182" height="192" alt="3b5b4566-57ed-426b-81d6-866ecab8c6cc_enhanced" src="https://github.com/user-attachments/assets/e8fe5686-db9f-47ce-a25f-f10fdfbfa8dd" />
+
 S-type instructions are used for store operations where data from a register is written to memory. J-type instructions are used for jump operations that modify the program counter to transfer control to another instruction address. L-type instructions are used for load operations where data is read from memory and stored in a register.
+
+# B Type Instruction
+<img width="910" height="404" alt="d7aebd22-6615-4248-9add-80e2729374ef_enhanced" src="https://github.com/user-attachments/assets/a206fbcd-0d84-40e6-b938-985b46382134" />
+
+B-Type instructions in the RV32I architecture are conditional branch instructions used to alter the control flow of the program based on register comparisons. These instructions compare the values stored in two registers (rs1 and rs2) and update the Program Counter (PC) if the specified condition is satisfied. The branch target address is calculated by adding the sign-extended immediate value to the current PC.
+
+The implemented B-type instructions include BEQ (branch if equal), BNE (branch if not equal), BLTU (branch if unsigned less than), and BGEU (branch if unsigned greater than or equal). These instructions play a critical role in implementing loops, conditional execution, and decision-making logic within the processor.
 
 # Pipeline Stage 1 – Instruction Fetch
 <img width="660" height="463" alt="image" src="https://github.com/user-attachments/assets/4078fec0-2e0d-43dc-b4fc-37184eb79972" />
